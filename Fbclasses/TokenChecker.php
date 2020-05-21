@@ -45,11 +45,6 @@ class TokenChecker
 			return "<script> alert('$this->error'); </script>";
 		}
 
-		//IF THERE IS SOME ERROR, SEND ALERT TO USER
-		if($this->error) {
-			return "<script> alert('$this->error'); </script>";
-		}
-
 		//CHECKING IF TOKEN IS IN A GOOD FORMAT AND WE HAVE THE EXPIRATION TIME
 		if(isset($this->graphNode['data_access_expires_at'])) {
 
