@@ -9,8 +9,6 @@ class FacebookRequests
     private $response;
     private $postArray;
     private $error;
-    private $proba;
-
     
     //CONSTRUCT FUNCTION TAKES 3 ARGUMENTS FOR FACEBOOK API AUTHENTICATION
     public function __construct($appId, $appSecret, $appToken) 
@@ -33,7 +31,7 @@ class FacebookRequests
     {
         try {
             //SENDING GET REQUEST TO FACEBOOK GRAPH API FOR POSTS 
-            $response = $this->fbObject->get($pageId.'/posts?fields=full_picture,width,height,created_time,message&limit=20',  
+            $this->response = $this->fbObject->get($pageId.'/posts?fields=full_picture,width,height,created_time,message&limit=20',  
             $this->appToken);
 
             //ASIGNING RETREIVED DATA FROM FACEBOOK RESPONSE TO PROPERTY
