@@ -6,7 +6,7 @@ class InputValidation
 	public static function SanitizeAppId($appId) 
 	{
 		$appId = filter_var($appId, FILTER_SANITIZE_STRING);
-		
+		return $appId;
 	}
 
 	//FUNCTION FOR SANITIZING ENTERED APP-SECRET
@@ -19,6 +19,7 @@ class InputValidation
 	//FUNCTION FOR SANITIZING ENTERED ACCESS TOKEN
 	public static function SanitizeAppToken($appToken) 
 	{
+		$appToken = filter_var($appToken, FILTER_SANITIZE_STRING);
 		return $appToken;
 	}
 
