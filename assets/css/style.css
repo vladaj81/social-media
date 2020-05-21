@@ -1,0 +1,144 @@
+
+/*COMMON CSS*/
+.socialButtons {
+	margin: 30px 0;
+}
+
+.facebookButtons {
+	margin: 100px 0 30px 0;
+}
+
+.instagramButtons {
+	margin-top: 100px;
+}
+
+#createFacebookPost {
+	display: none;
+}
+
+.error {
+	color: #ff0000;
+}
+
+.published {
+	font-weight: 600;
+}
+
+.facebookContainer {
+	margin-top: 80px;
+}
+
+#facebookForm,
+#instagramForm {
+	display: none;
+}
+
+#displayFacebookData {
+	margin-top: 50px;
+}
+
+#displayInstagramData {
+	margin-top: 50px;
+}
+
+.space {
+	margin : 0  0 30px 0;
+}
+/*COMMON CSS END*/
+
+
+/*FACEBOOK MODULE CSS*/
+.postPicture {
+	margin-bottom: 30px;
+}
+
+h3.blue {
+	color: #0066ff;
+}
+
+.messageParagraph {
+	height: 100px;
+	margin-bottom: 70px;
+	overflow: scroll;
+}
+/*FACEBOOK MODULE CSS END*/
+
+
+/*INSTAGRAM MODULE CSS*/
+.postWrapper {
+	height: 460px;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #efefef;
+	border-radius: 3px;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
+}
+
+.postWrapper:hover {
+	background-color: #f2f2f2;
+	cursor: pointer;
+}
+
+.postDetails {
+	color: #262626;
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+
+.postAuthor {
+	text-align: center;
+}
+
+.author, .user {
+	font-weight: 600;
+}
+
+.postDate {
+	color: #0084ff;
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.imageWrapper {
+	margin-bottom: 15px;
+}
+
+.likes, .hashtag  {
+	color: #00376b;
+	font-weight: 500;
+}
+
+.commentText {
+	font-size: 14px;
+}
+
+.postLink {
+	position: absolute;
+	top: 90%;
+	left: 42%;
+}
+
+.postLink>a {
+	text-transform: uppercase;
+	color: #0084ff;
+	font-weight: 600;
+}
+
+.postLink>a:hover {
+	color: #004f99;
+}
+/*INSTAGRAM MODULE CSS END*/
+
+
+/*MEDIA QUERY FOR SCREEN WIDTH 375PX AND SMALLER*/
+@media(max-width: 375px) {
+
+	.postLink {
+		top: 90%;
+	}
+
+	.postWrapper {
+		height: 480px;
+	}
+}
+/*MEDIA QUERY FOR SCREEN WIDTH 375PX AND SMALLER END*/

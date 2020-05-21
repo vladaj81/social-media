@@ -1,0 +1,10 @@
+[25-Apr-2020 09:21:34 UTC] PHP Fatal error:  Uncaught Facebook\Exceptions\FacebookAuthorizationException: (#200) If posting to a group, requires app being installed in the group, and \
+          either publish_to_groups permission with user token, or both manage_pages \
+          and publish_pages permission with page token; If posting to a page, \
+          requires both manage_pages and publish_pages as an admin with \
+          sufficient administrative permission in /home/bachatas/public_html/smplugin5/Facebook/Exceptions/FacebookResponseException.php:137
+Stack trace:
+#0 /home/bachatas/public_html/smplugin5/Facebook/FacebookResponse.php(210): Facebook\Exceptions\FacebookResponseException::create(Object(Facebook\FacebookResponse))
+#1 /home/bachatas/public_html/smplugin5/Facebook/FacebookResponse.php(255): Facebook\FacebookResponse->makeException()
+#2 /home/bachatas/public_html/smplugin5/Facebook/FacebookResponse.php(82): Facebook\FacebookResponse->decodeBody()
+#3 /home/bachatas/public_html/smplugin5/Facebook/FacebookClient.php(224): Facebook\Facebook in /home/bachatas/public_html/smplugin5/Facebook/Exceptions/FacebookResponseException.php on line 137
